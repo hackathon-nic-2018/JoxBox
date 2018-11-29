@@ -29,8 +29,8 @@
               </div>
               <!-- layer 3 -->
               <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                <a class="ready-btn right-btn page-scroll" href="#services">Ver Servicios</a>
+                <a class="ready-btn page-scroll" href="#about">Leer Más</a>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="section-headline services-head text-center">
-          <h2>Our Services</h2>
+          <h2>Servicios</h2>
         </div>
       </div>
     </div>
@@ -223,14 +223,14 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="wellcome-text">
             <div class="well-text text-center">
-              <h2>Welcome To Our eBusiness</h2>
+              <h2>Busca tu Jober</h2>
               <p>
                 Busuness Lorem ipsum dolor sit amet, consectetur adipiscing elit.luctus est eget congue.
               </p>
               <div class="subs-feilds">
                 <div class="suscribe-input">
-                  <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
-                  <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
+                  <input type="email" class="email form-control width-80" id="sus_email" placeholder="Buscar jober">
+                  <button type="submit" id="sus_submit" class="add-btn width-20">Buscar</button>
                   <div id="msg_Submit" class="h3 text-center hidden"></div>
                 </div>
               </div>
@@ -249,7 +249,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <h2>Our special Team</h2>
+            <h2>Mejores jober</h2>
           </div>
         </div>
       </div>
