@@ -17,7 +17,7 @@ class EmpleadorController extends Controller
     public function index()
     {
         //
-        return view('empleador.index');
+        
     }
 
     /**
@@ -53,8 +53,7 @@ class EmpleadorController extends Controller
             $file = $request->file('imagen');
             $file1 = time().".".$file->getClientOriginalExtension();
             $file->move("images/", "{$file1}");
-            $empleador->foto = $file1;
-            //dd($servicio->imagen);  
+            $empleador->foto = $file1;  
         }        
         $empleador->save();
         return redirect('/');
