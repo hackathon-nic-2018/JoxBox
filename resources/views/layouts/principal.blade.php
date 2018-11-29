@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>eBusiness Bootstrap Template</title>
+  <title>Inicio - @yield('title','Index')</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -21,9 +21,19 @@
     @include('layouts.complementos.menu')
     <!-- header-area end -->
   </header>
-  
-  @yield('content') 
-  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="margin-bottom: 150px;">
+    @yield('content') 
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
   <!-- Start Footer bottom Area -->
   @include('layouts.complementos.footer')

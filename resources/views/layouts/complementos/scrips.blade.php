@@ -1,4 +1,8 @@
-<script src="/cdn/js/lib/jquery/jquery.min.js"></script>
+<script src=" {{asset('/cdn/js/vue.js')}}"></script>
+<script src=" {{asset('/cdn/js/axios.js')}}"></script>
+<script src=" {{asset('/cdn/js/jquery.js')}}"></script>
+<script src=" {{asset('/cdn/js/toastr.js')}}"></script>
+
 <script src="/cdn/js/lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="/cdn/js/lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="/cdn/js/lib/venobox/venobox.min.js"></script>
