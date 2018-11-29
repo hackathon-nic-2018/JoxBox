@@ -14,3 +14,4 @@
 <script src="/cdn/js/contactform/contactform.js"></script>
 
 <script src="/cdn/js/js/main.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>

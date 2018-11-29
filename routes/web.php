@@ -17,3 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/home', function () {
+    return view('home');
+});
+
+//agregar empleados
+Route::resource('empleado', 'EmpleadoController');
+
