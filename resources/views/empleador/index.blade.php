@@ -2,7 +2,6 @@
 @section('title','Empleador')
 @section('content')
 	<div class="col-md-8 col-md-offset-2">
-		{{--cremos el formulario con un id para usar ajax--}}
 	
 		{!! Form::open(['route' =>'empleador.store','method'=>'POST','files'=>true]) !!}
 		
