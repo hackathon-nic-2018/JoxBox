@@ -8,7 +8,6 @@
 			<img src="/cdn/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
 			<img src="/cdn/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
 		</div>
-
 		<!-- direction 1 -->
 		<div id="slider-direction-1" class="slider-direction slider-one">
 			<div class="container">
@@ -85,8 +84,6 @@
 		</div>
 	</div>
 </div>
-<br>
-<br>
 <div class="container-fluid">
 	<section class="container">
 		<div class="container-page">
@@ -176,10 +173,10 @@
 			</div>
 			<div class="col-md-5" align="text-center">
 				<input name="_token" value="{{ csrf_token() }}" type="hidden"></input>
-				<button class="btn btn-primary" type="submit">Guardar</button>
+				<button class="btn btn" type="submit" id="botones">Guardar</button>
 			</div>
 			{{Form::close()}}
-			<
+			
 		</section>
 	</div>
 	<br>

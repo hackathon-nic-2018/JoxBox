@@ -92,7 +92,12 @@ class EmpleadoController extends Controller
      */
     public function show($id)
     {
-        
+        $empleado = DB::table('employees as e')
+        ->select('e.*')
+        ->where('e.id', '=', $id)
+            // para solo obtener el primer ingreso que quiero ver
+        ->first();
+        return view ('empleado.show',  ['empleado'=>$empleado]);
     }
 
     /**
