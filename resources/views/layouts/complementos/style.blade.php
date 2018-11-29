@@ -3,6 +3,7 @@
 <meta content="" name="description">
 <link href="/cdn//img/jobbox.png" rel="icon">
 <link href="/cdn//img/jobbox.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="{{asset('/cdn/js/toastr.css')}}">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">

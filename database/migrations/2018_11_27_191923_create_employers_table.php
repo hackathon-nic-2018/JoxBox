@@ -22,7 +22,7 @@ class CreateEmployersTable extends Migration
             $table->string('ciudad');
             $table->string('municipio');
             $table->string('telefono');
-            $table->string('foto')->default('default.jpg');
+            $table->string('foto');
 
             $table->foreign('id_usuario')->references('id')->on('users');
             $table->timestamps();
