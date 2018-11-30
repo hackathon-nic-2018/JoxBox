@@ -2351,6 +2351,9 @@ span.email-notes {
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
-div.card#cardperfile {
-  color: red;
+div#cardperfile.card {
+  border-color: red;
+}
+div.container#contenedor {
+  border-color: red;
 }
