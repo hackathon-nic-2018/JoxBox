@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\employee;
+use App\Category;
 use Carbon\Carbon;
 use App\User;
 use Session;
@@ -103,6 +104,8 @@ class EmpleadoController extends Controller
     }
     public function show($id)
     {
+        $categoria = Category::all();
+        //return view('empleado.show')->with('categoria',$categoria);
         $curso=DB::table('courses as c')
         ->join('employees  as e', 'e.id', '=', 'c.id_empleado')
         ->select('c.*', 'e.*')
@@ -114,7 +117,7 @@ class EmpleadoController extends Controller
         ->where('em.id', '=', $id)
         ->first();
 
-           return view ('empleado.show', ['curso'=>$curso, 'empleado'=>$empleado]);
+           return view ('empleado.show', ['curso'=>$curso, 'empleado'=>$empleado,'categoria'=> $categoria]);
     }
 
     /**

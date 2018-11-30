@@ -3,7 +3,7 @@
 <meta content="" name="description">
 <link href="/cdn//img/jobbox.png" rel="icon">
 <link href="/cdn//img/jobbox.png" rel="apple-touch-icon">
-<link rel="stylesheet" href="{{asset('/cdn/js/toastr.css')}}">
+
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
@@ -15,7 +15,8 @@
 <link href="/cdn//js/lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
 <link href="/cdn//js/lib/owlcarousel/owl.carousel.css" rel="stylesheet">
 <link href="/cdn//js/lib/owlcarousel/owl.transitions.css" rel="stylesheet">
-<link href="/cdn//js/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 <link href="/cdn//js/lib/animate/animate.min.css" rel="stylesheet">
 <link href="/cdn//js/lib/venobox/venobox.css" rel="stylesheet">
 

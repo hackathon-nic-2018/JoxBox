@@ -23,11 +23,10 @@ class CreateOffersTable extends Migration
             $table->string('puesto');
             $table->string('estado_laboral');
             $table->string('aspiracion_salarial');
-            $table->integer('id_imagen')->unsigned();
+            $table->string('imagen');
 
             $table->foreign('id_categoria')->references('id')->on('categories');
             $table->foreign('id_empleado')->references('id')->on('employees');
-            $table->foreign('id_imagen')->references('id')->on('images');
             $table->timestamps();
         });
     }
