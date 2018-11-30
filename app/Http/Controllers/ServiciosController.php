@@ -3,31 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\course;
+use App\Offer;
 use Auth;
+use Image;
 
-class CursosCOntroller extends Controller
+class ServiciosController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function listall($id)
-    {
-        $team=DB::table('courses as c')
-        ->join('employees  as e', 'e.id', '=', 'c.id_empleado')
-        ->join('categoris as c', 'p.categoria_id', '=', 'c.id')
-        ->select('c.*', 'e.*')
-        ->orderBy('c.id', 'desc')
-        ->paginate(7);
-
-        return view('cursos.list', ["cursos"=>$cursos]);
-    }
-
     public function index()
     {
         //
+        
+
     }
 
     /**
@@ -48,24 +39,28 @@ class CursosCOntroller extends Controller
      */
     public function store(Request $request)
     {
-       $curso= new course;
-
-       $curso->curso=$request->get('curso');
-       $curso->fecha_inicio=$request->get('fecha_inicio');
-       $curso->fecha_fin=$request->get('fecha_fin');
-       $curso->estado=$request->get('estado');
-       $curso->id_empleado=$request->get('id_empleado');
-        //$curso->id_empleado=\Auth::user()->id;
-      
-
-       
+        //
         //dd($request);
-       $curso->save();
-        // dd(request()->all());
+        $servicio = new Offer;
+        $servicio->id_empleado = \Auth::user()->id;
+        $servicio->id_categoria = $request->categoria;
+        $servicio->nombre = $request->nombre;
+        $servicio->descripcion = $request->descripcion;
+        $servicio->años_experiencia = $request->años_experiencia;
+        $servicio->puesto = $request->puesto;
+        $servicio->estado_laboral = $request->estado_laboral;
+        $servicio->aspiracion_salarial = $request->aspiracion_salarial;
+        
+        if($request->hasFile('imagen')){
+            $file = $request->file('imagen');
+            $file1 = time().".".$file->getClientOriginalExtension();
+            $file->move("images/", "{$file1}");
+            $servicio->imagen = $file1;  
+        }        
+        $servicio->save();
+        return redirect('/');
 
-       //return redirect()->route('empleado.show', $aux);
-        return back();
-   }
+    }
 
     /**
      * Display the specified resource.

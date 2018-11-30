@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\employee;
+use App\Category;
 use Carbon\Carbon;
 use App\User;
 use Session;
@@ -47,11 +48,13 @@ class EmpleadoController extends Controller
     {
         $empleado= new employee;
        
-        if($request->hasFile('imagen')){
-            $file = $request->file('imagen');
-            $file1 = time().".".$file->getClientOriginalExtension();
-            $file->move("/img/usuario/", "{$file1}");
-            $empleado->foto = $file1;  
+
+        if($request->hasFile('foto'))
+        {
+            $foto= $request->file('foto');
+            $filename= time(). '.'. $foto->getClientOriginalExtension();
+            Image::make($foto)->resize(520,640)->save(public_path('/img/usuario/'.$filename));
+            $empleado->foto=$filename;
         }   
 
         if($request->hasFile('record_policia'))
@@ -103,6 +106,8 @@ class EmpleadoController extends Controller
     }
     public function show($id)
     {
+        $categoria = Category::all();
+        //return view('empleado.show')->with('categoria',$categoria);
         $curso=DB::table('courses as c')
         ->join('employees  as e', 'e.id', '=', 'c.id_empleado')
         ->select('c.*', 'e.*')
@@ -114,7 +119,7 @@ class EmpleadoController extends Controller
         ->where('em.id', '=', $id)
         ->first();
 
-           return view ('empleado.show', ['curso'=>$curso, 'empleado'=>$empleado]);
+           return view ('empleado.show', ['curso'=>$curso, 'empleado'=>$empleado,'categoria'=> $categoria]);
     }
 
     /**
