@@ -28,4 +28,5 @@
 
 <!-- Responsive Stylesheet File -->
 <link href="/cdn//css/css/responsive.css" rel="stylesheet">
+<link href="/cdn//css/css/ofertas.css" rel="stylesheet">
 

@@ -26,6 +26,9 @@ Route::Resource('/empleador','EmpleadorController');
 Route::Resource('/categorias','CategoriaController');
 Route::Resource('/servicios','ServiciosController');
 
+Route::get('/listar/{id}','ServiciosController@listarAll');
+
+
 Route::resource('empleado', 'EmpleadoController');
 Route::resource('curso', 'CursosCOntroller');
 
