@@ -63,23 +63,6 @@
 			</div>
 		</div>
 
-		
-		<div class="col-lg-3">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h3 class="panel-title">Agregar datos academicos</h3>
-				</div>
-				<div class="panel-body">
-					<div class=" col-md-3 col-lg-3 "> 
-						<div id="listar-cursos">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-		</div>
-
 		@include('empleado.cursos')
 		<div class="col-lg-3">
 			<div class="panel panel-info">
@@ -93,13 +76,54 @@
 			<br>
 		</div>
 
+
+		
+		<div class="col-lg-3">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Datos Academicos</h3>
+				</div>
+				<div class="panel-body">
+					<div class=" col-md-3 col-lg-3 "> 
+						<table class="table table-user-information">
+							<tbody>
+								@foreach ($curso as $c)
+								<tr>
+									<td>Curso:</td>
+									<td>{{$c->curso}}</td>
+								</tr>
+								<tr>
+									<td>Fecha Inicio:</td>
+									<td>{{$c->fecha_inicio}}</td>
+								</tr>
+								<tr>
+									<td>Fecha fin:</td>
+									<td>{{$c->fecha_fin}}</td>
+								</tr>
+								<tr>
+									<tr>
+										<td>Estado:</td>
+										<td>{{$c->estado}}</td>
+									</tr>
+									
+								</tr>
+								
+
+							</tbody>
+							@endforeach
+						</table>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
 	</div>
 </div>
- 
+
 <script  type="text/javascript">
 	$(document).ready(function(){
-          listCursos();
-        });
+		listCursos();
+	});
       // paginacion
       $(document).on("click", ".pagination li a", function(e){
       	e.preventDefault();
