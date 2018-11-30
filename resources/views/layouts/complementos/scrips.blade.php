@@ -1,3 +1,4 @@
+
 <script src=" {{asset('/cdn/js/vue.js')}}"></script>
 <script src=" {{asset('/cdn/js/axios.js')}}"></script>
 <script src=" {{asset('/cdn/js/jquery.js')}}"></script>

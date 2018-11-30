@@ -22,13 +22,10 @@
     <!-- header-area end -->
   </header>
   
-  <div style="margin-bottom: 150px;">
+  <div class="row">
     @yield('content') 
   </div>
-  <br>
-  <br>
-  <br>
-  
+   
 
   <!-- Start Footer bottom Area -->
   @include('layouts.complementos.footer')

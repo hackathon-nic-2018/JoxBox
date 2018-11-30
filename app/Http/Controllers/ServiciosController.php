@@ -4,20 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Offer;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use App\Employees;
 use App\Category;
 use DB;
-=======
->>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
-=======
-=======
-use App\Employees;
-use App\Category;
-use DB;
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
->>>>>>> d0b641a1771473fd0fbd5059ad5bec7666580c53
 use Auth;
 use Image;
 
@@ -31,12 +20,6 @@ class ServiciosController extends Controller
     public function index()
     {
         //
-        
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d0b641a1771473fd0fbd5059ad5bec7666580c53
         $oferta = DB::table('offers')
         ->join('categories', 'categories.id', '=', 'offers.id_categoria')
         ->join('employees', 'employees.id', '=', 'offers.id_empleado')
@@ -48,24 +31,7 @@ class ServiciosController extends Controller
         
 
     }
-    public function listarAll($id){
-        $ofertaAll = Offer::orderBy('id','asc')->where('offers.id',$id)->get();
-            $ofertaAll->each(function($ofertaAll){
-                $ofertaAll->category;
-                $ofertaAll->emplo;
-                //dd($ofertaAll->category);
-
-            });
-        
-        return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
-<<<<<<< HEAD
-=======
->>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
-=======
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
->>>>>>> d0b641a1771473fd0fbd5059ad5bec7666580c53
-
-    }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -117,25 +83,16 @@ class ServiciosController extends Controller
     public function show($id)
     {
         //
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d0b641a1771473fd0fbd5059ad5bec7666580c53
-        $ofertaAll = DB::table('offers')
-        ->join('categories', 'categories.id', '=', 'offers.id_categoria')
-        ->join('employees', 'employees.id', '=', 'offers.id_empleado')
-        ->select('offers.id','offers.nombre as servicio','offers.imagen','offers.descripcion','categories.nombre as categoria','employees.nombre as empleado');
-        //->where('offers.id', '=',$id );
-        dd($ofertaAll);
+        $ofertaAll = Offer::orderBy('id','asc')->where('offers.id','=',$id)->get();
+            $ofertaAll->each(function($ofertaAll){
+                $ofertaAll->category;
+                $ofertaAll->emplo;
+                //dd($ofertaAll->category);
+
+            });
+        
         return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
 
-<<<<<<< HEAD
-=======
->>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
-=======
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
->>>>>>> d0b641a1771473fd0fbd5059ad5bec7666580c53
     }
 
     /**
@@ -146,18 +103,7 @@ class ServiciosController extends Controller
      */
     public function edit($id)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-       
-=======
-        //
->>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
-=======
-        //
-=======
-       
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
->>>>>>> d0b641a1771473fd0fbd5059ad5bec7666580c53
+
     }
 
     /**
