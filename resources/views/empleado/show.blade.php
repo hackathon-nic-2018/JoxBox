@@ -7,7 +7,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" >
-				<div class="panel panel-info">
+			<div class="panel panel-info">
 				<div class="panel-heading">
 					<h3 class="panel-title">Perfil</h3>
 				</div>
@@ -62,11 +62,11 @@
 					<!--btn modal create-->
 					<span class="pull-left" >
 						<a class="btn btn-primary" style="margin-top: 40px;" href="#" data-toggle='modal' data-target='#myModalServicio'>Agregar servicio
-				              
-				        </a>
-				        <!-- modal create servicio-->
-				        @include('servicios.createServicio')
-				        <!-- fin-->
+
+						</a>
+						<!-- modal create servicio-->
+						@include('servicios.createServicio')
+						<!-- fin-->
 
 					</span>
 				</div>
@@ -81,6 +81,30 @@
 				</div>
 				<div class="panel-body">
 					<button type="button" class="btn btn-sm btn-primary btn-primary" data-target="#modal-create" data-toggle="modal"><em class="fa fa-pencil">Agregar</em></button>
+				</div>
+			</div>
+			<br>
+		</div>
+
+		<div class="col-lg-3">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Solicitudes de proformas</h3>
+				</div>
+				<div class="panel-body">
+					<div class=" col-md-3 col-lg-3 "> 
+						<table class="table table-user-information">
+							<tbody>
+								@foreach ($proformas as $p)
+								<tr>
+									<td>Nombre del Usuario que la solicita:</td>
+									<td>{{$p->nombre}}</td>
+									<td>{{$p->descripcion}}</td>
+								</tr>
+							</tbody>
+							@endforeach
+						</table>
+					</div>
 				</div>
 			</div>
 			<br>
@@ -127,6 +151,8 @@
 			</div>
 			<br>
 		</div>
+
+		
 	</div>
 </div>
 

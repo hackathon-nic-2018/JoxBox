@@ -26,9 +26,9 @@
               <!-- layer 2 -->
               <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
 
-                <h1 class="title2" style="color:#000; text-align:left;">MILES DE <span style="color:#80E27E;">JOBERS</span></h1>
+                <h1 class="title2" style="color:#fff; text-align:left;">MILES DE <span style="color:#fff;">JOBERS</span></h1>
 
-                <h1 style="color:#000; text-align:left; margin-top:-10px;">DISPUESTOS A SOLUCIONAR TUS PROBLEMAS</h1>
+                <h1 style="color:#fff; text-align:left; margin-top:-10px;">DISPUESTOS A SOLUCIONAR TUS PROBLEMAS</h1>
 
               </div>
               <!-- layer 3 -->
@@ -94,52 +94,6 @@
   </div>
 </div>
 <!-- End Slider Area -->
-
-
-
-<!-- Start Service area -->
-<div id="services" class="services-area area-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="section-headline services-head text-center">
-          <h2>Categorias</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="services-contents">
-        <!-- Start Left services -->
-        @foreach ($categorias as $c)
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="about-move">
-            <div class="services-details">
-              <div class="single-services">
-                <a class="services-icon" href="#">
-                 <i class="fa fa-code"></i>
-               </a>
-               <h4>{{$c->nombre}}</h4>
-               <p>
-
-               </p>
-             </div>
-           </div>
-           <!-- end about-details -->
-         </div>
-       </div>
-       @endforeach
-
-     </div>
-
-   </div>
-
- </div>
-
- <!-- End Left services -->
-
- <!-- End Left services -->
-
-</div>
 
 <!-- End Service area -->
 
@@ -215,7 +169,8 @@
         <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
         <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
         <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
-        <button class="btn-primary" id="button">Ver Perfil</button>
+        <a href="/perfil/empleado/{{$j->id}}"> <button class="btn-primary" id="button">Ver Perfil </button></a>
+       
       </div>
 
     </div>
@@ -256,14 +211,14 @@
                 <div class="card">
                   <div class="card-body text-center mt-4">
                     <p><img class=" img-fluid" src="/images/{{$f->imagen}}" alt="card image"></p>
-                    <h4 class="card-title">{{$f->categoria}}</h4>
-                    <p class="card-text">{{$f->descripcion}}</p>
+                    <h4 class="card-title"><b>{{$f->nombre}}</b></h4>
+                    <h4 class="card-title"><b>{{$f->empleado}}</b></h4>
+                    <p class="card-text">{{$f->profesion}}</p>
 
                     <ul class="list-inline" style="padding-bottom: 20px;">
                       <li class="list-inline-item">
                         <a class="social-icon text-xs-center" target="_blank" href="/listar/{{$f->id}}">
                           <span class="btn btn-primary">Ver más</span>
-
                         </a>
                       </li>
                       //

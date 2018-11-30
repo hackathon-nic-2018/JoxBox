@@ -4,12 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Offer;
-<<<<<<< HEAD
-=======
 use App\Employees;
 use App\Category;
 use DB;
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
+
 use Auth;
 use Image;
 
@@ -24,8 +22,7 @@ class ServiciosController extends Controller
     {
         //
         
-<<<<<<< HEAD
-=======
+
         $oferta = DB::table('offers')
         ->join('categories', 'categories.id', '=', 'offers.id_categoria')
         ->join('employees', 'employees.id', '=', 'offers.id_empleado')
@@ -39,15 +36,14 @@ class ServiciosController extends Controller
     }
     public function listarAll($id){
         $ofertaAll = Offer::orderBy('id','asc')->where('offers.id',$id)->get();
-            $ofertaAll->each(function($ofertaAll){
-                $ofertaAll->category;
-                $ofertaAll->emplo;
+        $ofertaAll->each(function($ofertaAll){
+            $ofertaAll->category;
+            $ofertaAll->emplo;
                 //dd($ofertaAll->category);
 
-            });
+        });
         
         return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
 
     }
 
@@ -101,8 +97,8 @@ class ServiciosController extends Controller
     public function show($id)
     {
         //
-<<<<<<< HEAD
-=======
+        <<<<<<< HEAD
+        =======
         $ofertaAll = DB::table('offers')
         ->join('categories', 'categories.id', '=', 'offers.id_categoria')
         ->join('employees', 'employees.id', '=', 'offers.id_empleado')
@@ -111,7 +107,7 @@ class ServiciosController extends Controller
         dd($ofertaAll);
         return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
 
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
+        >>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
     }
 
     /**
@@ -122,11 +118,11 @@ class ServiciosController extends Controller
      */
     public function edit($id)
     {
-<<<<<<< HEAD
+        <<<<<<< HEAD
         //
-=======
-       
->>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
+        =======
+        
+        >>>>>>> a681e9a89c9352e700a5052b9d233a8fb6a50b74
     }
 
     /**

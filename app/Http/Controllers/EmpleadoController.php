@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\employee;
+use App\offer;
 use App\Category;
 use Carbon\Carbon;
 use App\User;
@@ -104,6 +105,27 @@ class EmpleadoController extends Controller
            return view ('cursos.list', ['curso'=>$curso]);
 
     }
+    public function perfil ($id)
+    {
+
+        
+         $empleado=DB::table('employees as e')
+        ->join('users as u', 'e.id_usuario', '=', 'u.id')
+        ->select('u.*', 'e.*')
+        ->where('u.id', '=', $id)
+        ->first();
+
+        $oferta=offer::select('offers.*', 'employees.*','categories.*')
+        ->join('employees', 'employees.id', '=', 'offers.id_empleado')
+        ->join('categories', 'categories.id', '=', 'offers.id_categoria')
+        ->orderBy('employees.nombre', 'desc')
+         ->where('offers.id_empleado', '=', $id)
+        ->paginate(6);;
+
+
+        return view ('empleado.perfil', ["empleado"=>$empleado, 'oferta'=>$oferta]);
+
+    }
     public function show($id)
     {
         $categoria = Category::all();
@@ -119,7 +141,16 @@ class EmpleadoController extends Controller
         ->where('em.id', '=', $id)
         ->first();
 
-           return view ('empleado.show', ['curso'=>$curso, 'empleado'=>$empleado,'categoria'=> $categoria]);
+        
+
+       $proformas=DB::table('solicitus as s')
+        ->join('employees  as e', 'e.id', '=', 's.id_empleado')
+        ->select('s.*', 'e.*')
+        ->where('e.id', '=', $id)
+        ->paginate(8);
+
+
+           return view ('empleado.show', ['curso'=>$curso, 'empleado'=>$empleado,'categoria'=> $categoria, 'proformas'=>$proformas]);
     }
 
     /**

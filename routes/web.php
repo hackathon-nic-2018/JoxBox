@@ -30,6 +30,9 @@ Route::get('/listar/{id}','ServiciosController@listarAll');
 
 
 Route::resource('empleado', 'EmpleadoController');
+
+Route::resource('solicitud', 'SolicitudController');
+Route::get('/perfil/empleado/{id}', 'EmpleadoController@perfil'); 
 Route::resource('curso', 'CursosCOntroller');
 
 
