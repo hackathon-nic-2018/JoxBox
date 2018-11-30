@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Offer;
+use App\Employees;
+use App\Category;
+use DB;
 use Auth;
 use Image;
 
@@ -18,6 +21,27 @@ class ServiciosController extends Controller
     {
         //
         
+        $oferta = DB::table('offers')
+        ->join('categories', 'categories.id', '=', 'offers.id_categoria')
+        ->join('employees', 'employees.id', '=', 'offers.id_empleado')
+        ->select('offers.id','offers.nombre as servicio','offers.imagen','offers.descripcion','categories.nombre as categoria','employees.nombre as empleado')
+        ->orderBy('offers.nombre', 'desc')
+        ->paginate(10);
+        //dd($oferta);
+        return view('servicios.listar')->with('oferta',$oferta);
+        
+
+    }
+    public function listarAll($id){
+        $ofertaAll = Offer::orderBy('id','asc')->where('offers.id',$id)->get();
+            $ofertaAll->each(function($ofertaAll){
+                $ofertaAll->category;
+                $ofertaAll->emplo;
+                //dd($ofertaAll->category);
+
+            });
+        
+        return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
 
     }
 
@@ -71,6 +95,14 @@ class ServiciosController extends Controller
     public function show($id)
     {
         //
+        $ofertaAll = DB::table('offers')
+        ->join('categories', 'categories.id', '=', 'offers.id_categoria')
+        ->join('employees', 'employees.id', '=', 'offers.id_empleado')
+        ->select('offers.id','offers.nombre as servicio','offers.imagen','offers.descripcion','categories.nombre as categoria','employees.nombre as empleado');
+        //->where('offers.id', '=',$id );
+        dd($ofertaAll);
+        return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
+
     }
 
     /**
@@ -81,7 +113,7 @@ class ServiciosController extends Controller
      */
     public function edit($id)
     {
-        //
+       
     }
 
     /**
