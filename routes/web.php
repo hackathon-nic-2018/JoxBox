@@ -22,5 +22,6 @@ Route::get('/perfil', function () {
     return view('perfil');
 });
 Route::Resource('/empleador','EmpleadorController');
+Route::Resource('/categorias','CategoriaController');
 
 

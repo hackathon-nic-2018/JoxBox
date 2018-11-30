@@ -29,17 +29,15 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="#">
-            <i class="fas fa-user"></i>
-            <i class="fas fa-briefcase"></i>
-            <span class="nav-link-text">Usuarios</span>
+          <a class="nav-link" href="/categorias">
+            <i class="fas fa-bars"></i>
+            <span class="nav-link-text">Categorias</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="/empleador">
-            <i class="fas fa-user"></i>
+          <a class="nav-link" href="#">
             <i class="fas fa-briefcase"></i>
-            <span class="nav-link-text">Empleador</span>
+            <span class="nav-link-text">prueba</span>
           </a>
         </li>
 
