@@ -2,8 +2,6 @@
 
 @section('content')
 <br><br><br><br><br>
-
-
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" >
@@ -68,6 +66,18 @@
 			<div class="panel panel-info">
 				<div class="panel-heading">
 					<h3 class="panel-title">Agregar datos academicos</h3>
+				</div>
+				<div class="panel-body">
+					<button type="button" class="btn btn-sm btn-primary btn-primary" data-target="#modal-create" data-toggle="modal"><em class="fa fa-pencil">Agregar</em></button>
+				</div>
+			</div>
+			<br>
+		</div>
+
+		<div class="col-lg-4">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Ofrecer un servicio</h3>
 				</div>
 				<div class="panel-body">
 					<button type="button" class="btn btn-sm btn-primary btn-primary" data-target="#modal-create" data-toggle="modal"><em class="fa fa-pencil">Agregar</em></button>
