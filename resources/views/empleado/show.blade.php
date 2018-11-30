@@ -7,7 +7,23 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" >
-			<div class="panel panel-info">
+			<!--menu taps para mostrar perfil empleado-->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Datos generales</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Datos academicos</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Datos</a>
+				  </li>
+			</ul>
+
+			<!--body taps-->
+			<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="panel panel-info">
 				<div class="panel-heading">
 					<h3 class="panel-title">Perfil</h3>
 				</div>
@@ -61,7 +77,13 @@
 					</span>
 				</div>
 			</div>
-		</div>
+
+				  </div>
+				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+				  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+			</div>
+			<!--fin body taps-->
+			</div>
 
 		@include('empleado.cursos')
 		<div class="col-lg-3">
