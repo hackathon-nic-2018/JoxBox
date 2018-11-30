@@ -21,19 +21,14 @@
     @include('layouts.complementos.menu')
     <!-- header-area end -->
   </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  
   <div style="margin-bottom: 150px;">
     @yield('content') 
   </div>
   <br>
   <br>
   <br>
-  <br>
-  <br>
+  
 
   <!-- Start Footer bottom Area -->
   @include('layouts.complementos.footer')

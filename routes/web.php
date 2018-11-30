@@ -24,4 +24,6 @@ Route::get('/perfil', function () {
 Route::Resource('/empleador','EmpleadorController');
 Route::Resource('/categorias','CategoriaController');
 
+Route::resource('empleado', 'EmpleadoController');
+
 
