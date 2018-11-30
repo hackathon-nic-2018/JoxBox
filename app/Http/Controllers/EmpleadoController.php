@@ -46,13 +46,14 @@ class EmpleadoController extends Controller
     public function store(Request $request)
     {
         $empleado= new employee;
-        if($request->hasFile('foto'))
-        {
-            $foto= $request->file('foto');
-            $filename= time(). '.'. $foto->getClientOriginalExtension();
-            Image::make($foto)->resize(750,500)->save(public_path('/img/usuario/'.$filename));
-            $empleado->foto=$filename;
+       
+        if($request->hasFile('imagen')){
+            $file = $request->file('imagen');
+            $file1 = time().".".$file->getClientOriginalExtension();
+            $file->move("/img/usuario/", "{$file1}");
+            $empleado->foto = $file1;  
         }   
+
         if($request->hasFile('record_policia'))
         {
             $record_policia= $request->file('record_policia');
@@ -90,14 +91,30 @@ class EmpleadoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function listallcursos($id)
+    {
+         $empleado=DB::table('employees as em')
+        ->select('em.*')
+        ->where('em.id', '=', $id)
+        ->first();
+
+           return view ('cursos.list', ['curso'=>$curso]);
+
+    }
     public function show($id)
     {
-        $empleado = DB::table('employees as e')
-        ->select('e.*')
-        ->where('e.id', '=', $id)
-            // para solo obtener el primer ingreso que quiero ver
+        $curso=DB::table('courses as c')
+        ->join('employees  as e', 'e.id', '=', 'c.id_empleado')
+        ->select('c.*', 'e.*')
+        ->orderBy('c.id', 'desc')
+        ->paginate(7);
+
+        $empleado=DB::table('employees as em')
+        ->select('em.*')
+        ->where('em.id', '=', $id)
         ->first();
-        return view ('empleado.show',  ['empleado'=>$empleado]);
+
+           return view ('empleado.show', ['curso'=>$curso, 'empleado'=>$empleado]);
     }
 
     /**

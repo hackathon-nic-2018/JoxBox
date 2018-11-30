@@ -24,5 +24,9 @@ Route::get('/perfil', function () {
 Route::Resource('/empleador','EmpleadorController');
 
 Route::resource('empleado', 'EmpleadoController');
+Route::resource('curso', 'CursosCOntroller');
 
 
+
+
+Route::get('/listall/{page?}', 'EmpleadoController@listallcursos');
