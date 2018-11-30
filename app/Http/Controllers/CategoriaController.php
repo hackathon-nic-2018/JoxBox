@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
+use Image;
 
 class CategoriaController extends Controller
 {
@@ -14,6 +16,8 @@ class CategoriaController extends Controller
     public function index()
     {
         //
+        $categoria = Category::Orderby('nombre','desc')->paginate(10);
+        return view('categoria.index')->with('categoria',$categoria);
     }
 
     /**
@@ -35,6 +39,18 @@ class CategoriaController extends Controller
     public function store(Request $request)
     {
         //
+        //dd($request);
+        $categoria = new Category;
+        $categoria->nombre = $request->nombre;
+        
+        if($request->hasFile('imagen')){
+            $file = $request->file('imagen');
+            $file1 = time().".".$file->getClientOriginalExtension();
+            $file->move("images/", "{$file1}");
+            $categoria->imagen = $file1;  
+        }        
+        $categoria->save();
+        return redirect('/categorias');
     }
 
     /**
