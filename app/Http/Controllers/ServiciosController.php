@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Offer;
+<<<<<<< HEAD
 use App\Employees;
 use App\Category;
 use DB;
+=======
+>>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
 use Auth;
 use Image;
 
@@ -21,6 +24,7 @@ class ServiciosController extends Controller
     {
         //
         
+<<<<<<< HEAD
         $oferta = DB::table('offers')
         ->join('categories', 'categories.id', '=', 'offers.id_categoria')
         ->join('employees', 'employees.id', '=', 'offers.id_empleado')
@@ -42,6 +46,8 @@ class ServiciosController extends Controller
             });
         
         return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
+=======
+>>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
 
     }
 
@@ -95,6 +101,7 @@ class ServiciosController extends Controller
     public function show($id)
     {
         //
+<<<<<<< HEAD
         $ofertaAll = DB::table('offers')
         ->join('categories', 'categories.id', '=', 'offers.id_categoria')
         ->join('employees', 'employees.id', '=', 'offers.id_empleado')
@@ -103,6 +110,8 @@ class ServiciosController extends Controller
         dd($ofertaAll);
         return view('servicios.listarAll')->with('ofertaAll',$ofertaAll);
 
+=======
+>>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
     }
 
     /**
@@ -113,7 +122,11 @@ class ServiciosController extends Controller
      */
     public function edit($id)
     {
+<<<<<<< HEAD
        
+=======
+        //
+>>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
     }
 
     /**

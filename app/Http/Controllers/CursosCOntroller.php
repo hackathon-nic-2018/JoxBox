@@ -56,13 +56,15 @@ class CursosCOntroller extends Controller
        $curso->estado=$request->get('estado');
        $curso->id_empleado=$request->get('id_empleado');
         //$curso->id_empleado=\Auth::user()->id;
-       $aux2->id_empleado=$request->get('id_empleado');
+      
+
        
         //dd($request);
        $curso->save();
         // dd(request()->all());
 
-       return redirect()->route('empleado.show', $aux);
+       //return redirect()->route('empleado.show', $aux);
+        return back();
    }
 
     /**

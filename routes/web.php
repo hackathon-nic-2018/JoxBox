@@ -25,7 +25,10 @@ Route::get('/perfil', function () {
 Route::Resource('/empleador','EmpleadorController');
 Route::Resource('/categorias','CategoriaController');
 Route::Resource('/servicios','ServiciosController');
+<<<<<<< HEAD
 Route::get('/listar/{id}','ServiciosController@listarAll');
+=======
+>>>>>>> d25fd27ba134cf2186f1a7436cd5f2c7b0fb788c
 
 Route::resource('empleado', 'EmpleadoController');
 Route::resource('curso', 'CursosCOntroller');

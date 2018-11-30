@@ -48,11 +48,13 @@ class EmpleadoController extends Controller
     {
         $empleado= new employee;
        
-        if($request->hasFile('imagen')){
-            $file = $request->file('imagen');
-            $file1 = time().".".$file->getClientOriginalExtension();
-            $file->move("/img/usuario/", "{$file1}");
-            $empleado->foto = $file1;  
+
+        if($request->hasFile('foto'))
+        {
+            $foto= $request->file('foto');
+            $filename= time(). '.'. $foto->getClientOriginalExtension();
+            Image::make($foto)->resize(520,640)->save(public_path('/img/usuario/'.$filename));
+            $empleado->foto=$filename;
         }   
 
         if($request->hasFile('record_policia'))

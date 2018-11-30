@@ -103,13 +103,14 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="section-headline services-head text-center">
-          <h2>Servicios</h2>
+          <h2>Categorias</h2>
         </div>
       </div>
     </div>
     <div class="row text-center">
       <div class="services-contents">
         <!-- Start Left services -->
+        @foreach ($categorias as $c)
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="about-move">
             <div class="services-details">
@@ -117,105 +118,28 @@
                 <a class="services-icon" href="#">
                  <i class="fa fa-code"></i>
                </a>
-               <h4>Expert Coder</h4>
+               <h4>{{$c->nombre}}</h4>
                <p>
-                will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-              </p>
-            </div>
-          </div>
-          <!-- end about-details -->
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <div class="about-move">
-          <div class="services-details">
-            <div class="single-services">
-              <a class="services-icon" href="#">
-               <i class="fa fa-camera-retro"></i>
-             </a>
-             <h4>Creative Designer</h4>
-             <p>
-              will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-            </p>
-          </div>
-        </div>
-        <!-- end about-details -->
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
-      <!-- end col-md-4 -->
-      <div class=" about-move">
-        <div class="services-details">
-          <div class="single-services">
-            <a class="services-icon" href="#">
-             <i class="fa fa-wordpress"></i>
-           </a>
-           <h4>Wordpress Developer</h4>
-           <p>
-            will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-          </p>
-        </div>
-      </div>
-      <!-- end about-details -->
-    </div>
-  </div>
-  <div class="col-md-4 col-sm-4 col-xs-12">
-    <!-- end col-md-4 -->
-    <div class=" about-move">
-      <div class="services-details">
-        <div class="single-services">
-          <a class="services-icon" href="#">
-           <i class="fa fa-camera-retro"></i>
-         </a>
-         <h4>Social Marketer </h4>
-         <p>
-          will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-        </p>
-      </div>
-    </div>
-    <!-- end about-details -->
-  </div>
+
+               </p>
+             </div>
+           </div>
+           <!-- end about-details -->
+         </div>
+       </div>
+       @endforeach
+
+     </div>
+
+   </div>
+
+ </div>
+ <!-- End Left services -->
+
+ <!-- End Left services -->
+
 </div>
-<!-- End Left services -->
-<div class="col-md-4 col-sm-4 col-xs-12">
-  <!-- end col-md-4 -->
-  <div class=" about-move">
-    <div class="services-details">
-      <div class="single-services">
-        <a class="services-icon" href="#">
-         <i class="fa fa-bar-chart"></i>
-       </a>
-       <h4>Seo Expart</h4>
-       <p>
-        will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-      </p>
-    </div>
-  </div>
-  <!-- end about-details -->
-</div>
-</div>
-<!-- End Left services -->
-<div class="col-md-4 col-sm-4 col-xs-12">
-  <!-- end col-md-4 -->
-  <div class=" about-move">
-    <div class="services-details">
-      <div class="single-services">
-        <a class="services-icon" href="#">
-         <i class="fa fa-ticket"></i>
-       </a>
-       <h4>24/7 Support</h4>
-       <p>
-        will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-      </p>
-    </div>
-  </div>
-  <!-- end about-details -->
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <!-- End Service area -->
 
 <!-- Start Wellcome Area -->
@@ -249,17 +173,18 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="section-headline text-center">
-          <h2>Mejores jober</h2>
+          <h2>Mejores Jober</h2>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="team-top">
+        @foreach ($jober as $j)
         <div class="col-md-3 col-sm-3 col-xs-12">
           <div class="single-team-member">
             <div class="team-img">
               <a href="#">
-                <img src="/img/usuario/1.jpg" alt="">
+                <img src="/img/usuario/{{$j->foto}}" alt="">
               </a>
               <div class="team-social-icon text-center">
                 <ul>
@@ -282,121 +207,91 @@
          </div>
        </div>
        <div class="team-content text-center">
-        <h4>Jhon Mickel</h4>
-        <p>Seo</p>
+        <h4>{{$j->nombre}} {{$j->apellido}}</h4>
+        <p>{{$j->profesion}}</p>
+        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+        <button class="btn-primary" id="button">Ver Perfil</button>
+      </div>
+
+    </div>
+
+  </div>
+  @endforeach
+  <!-- End column -->
+  
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- fin jober -->
+<!-- inicio servicios -->
+<div id="portfolio" class="portfolio-area area-padding fix">
+  <div class="section-headline text-center">
+    <h2>Ultimos Servicios Publicados</h2>
+  </div>
+  <div class="container">
+    <div class="section"> 
+      <div class="row">
+        <div class="col-md-12">
+          @foreach($oferta as $o)
+          <div class="col-md-4">
+           <div class="card">
+            <img class="card-img-top" src="/images/{{$o->imagen}}" alt="Card image cap" id="image">
+            <div class="card-body" id="body">
+              <br>
+              <h5 class="card-title border-bottom pb-3"><b>Nombre: </b>{{$o->nombre}}</h5>
+              <p class="card-text"><b>Descripcion:</b> {{$o->descripcion}}</p>
+              <p class="card-text"><b>Ubicacion:</b> {{$o->municipio}}</p>
+              <p class="card-text"><b>Profesion:</b> {{$o->profesion}}</p>
+              <p class="card-text"><b>Experiencia:</b> {{$o->años_experiencia}} años</p>
+              <button class="btn-primary">Ver Mas</button>
+            </div>
+          </div>
+          <br>  <br>
+        </div>
+        @endforeach
       </div>
     </div>
   </div>
-  <!-- End column -->
-  <div class="col-md-3 col-sm-3 col-xs-12">
-    <div class="single-team-member">
-      <div class="team-img">
-        <a href="#">
-          <img src="/img/team/2.jpg" alt="">
-        </a>
-        <div class="team-social-icon text-center">
-          <ul>
-            <li>
-              <a href="#">
-               <i class="fa fa-facebook"></i>
-             </a>
-           </li>
-           <li>
-            <a href="#">
-             <i class="fa fa-twitter"></i>
-           </a>
-         </li>
-         <li>
-          <a href="#">
-           <i class="fa fa-instagram"></i>
-         </a>
-       </li>
-     </ul>
-   </div>
- </div>
- <div class="team-content text-center">
-  <h4>Andrew Arnold</h4>
-  <p>Web Developer</p>
 </div>
 </div>
-</div>
-<!-- End column -->
-<div class="col-md-3 col-sm-3 col-xs-12">
-  <div class="single-team-member">
-    <div class="team-img">
-      <a href="#">
-        <img src="/img/team/3.jpg" alt="">
-      </a>
-      <div class="team-social-icon text-center">
-        <ul>
-          <li>
-            <a href="#">
-             <i class="fa fa-facebook"></i>
-           </a>
-         </li>
-         <li>
-          <a href="#">
-           <i class="fa fa-twitter"></i>
-         </a>
-       </li>
-       <li>
-        <a href="#">
-         <i class="fa fa-instagram"></i>
-       </a>
-     </li>
-   </ul>
- </div>
-</div>
-<div class="team-content text-center">
-  <h4>Lellien Linda</h4>
-  <p>Web Design</p>
-</div>
-</div>
-</div>
-<!-- End column -->
-<div class="col-md-3 col-sm-3 col-xs-12">
-  <div class="single-team-member">
-    <div class="team-img">
-      <a href="#">
-        <img src="/img/team/4.jpg" alt="">
-      </a>
-      <div class="team-social-icon text-center">
-        <ul>
-          <li>
-            <a href="#">
-             <i class="fa fa-facebook"></i>
-           </a>
-         </li>
-         <li>
-          <a href="#">
-           <i class="fa fa-twitter"></i>
-         </a>
-       </li>
-       <li>
-        <a href="#">
-         <i class="fa fa-instagram"></i>
-       </a>
-     </li>
-   </ul>
- </div>
-</div>
-<div class="team-content text-center">
-  <h4>Jhon Powel</h4>
-  <p>Seo Expert</p>
-</div>
-</div>
-</div>
-<!-- End column -->
-</div>
-</div>
-</div>
-</div>
-<!-- End Team Area -->
 
+</div>
+</div>
 
+<!-- End column --><!-- End Team Area -->
+
+<hr>
+</div>
 
 <!-- Footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 @endsection
+@section('script')
+<script>
+  function add(ths,sno){
+
+
+    for (var i=1;i<=5;i++){
+      var cur=document.getElementById("star"+i)
+      cur.className="fa fa-star"
+    }
+
+    for (var i=1;i<=sno;i++){
+      var cur=document.getElementById("star"+i)
+      if(cur.className=="fa fa-star")
+      {
+        cur.className="fa fa-star checked"
+      }
+    }
+
+  }
+</script>
