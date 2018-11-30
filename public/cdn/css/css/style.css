@@ -36,6 +36,7 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
+
 html, body {
   height: 100%;
 }
@@ -84,7 +85,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0 0 15px;
   color: #444;
   font-weight: 500;
@@ -126,7 +127,7 @@ a {
 }
 
 a:hover {
-  color: #3EC1D5;
+  color: #80e27e;
   text-decoration: none;
 }
 
@@ -137,7 +138,7 @@ a:active, a:hover {
 body {
   background: #fff none repeat scroll 0 0;
   color: #444;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   text-align: left;
   overflow-x: hidden;
@@ -148,7 +149,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #3EC1D5;
+  background: #80e27e;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -165,13 +166,13 @@ body {
 }
 
 .back-to-top:focus {
-  background: #3EC1D5;
+  background: #80e27e;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #3cd6ed;
+  background: #80e27e;
   color: #fff;
 }
 
@@ -202,12 +203,12 @@ div#preloader {
 }
 
 ::-moz-selection {
-  background: #3EC1D5;
+  background: #80e27e;
   text-shadow: none;
 }
 
 ::selection {
-  background: #3EC1D5;
+  background: #80e27e;
   text-shadow: none;
 }
 
@@ -264,7 +265,7 @@ div#preloader {
   left: 0;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.40);
+  background: #FFF;
   z-index: 9;
 }
 
@@ -280,8 +281,8 @@ div#preloader {
 }
 
 .main-menu ul.navbar-nav li a {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #fff;
+  background: #FFF none repeat scroll 0 0;
+  color: #323232;
   font-size: 15px;
   font-weight: 500;
   padding: 24px 0px;
@@ -290,7 +291,7 @@ div#preloader {
 }
 
 .main-menu ul.navbar-nav li.active > a::after {
-  border: 1px solid #fff;
+  border: 1px solid #323232;
   bottom: 0px;
   content: "";
   left: 0;
@@ -300,21 +301,21 @@ div#preloader {
 
 .main-menu ul.navbar-nav li.active a:hover {
   background: none;
-  color: #fff;
+  color: #323232;
 }
 
 .main-menu ul.navbar-nav li.active a:focus {
-  color: #fff;
+  color: #323232;
 }
 
 .main-menu ul.navbar-nav li.active a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #fff;
+  color: #323232;
   position: relative;
 }
 
 .main-menu ul.navbar-nav li a:hover {
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .navbar {
@@ -340,7 +341,7 @@ div#preloader {
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   background-color: transparent;
-  color: #fff;
+  color: #323232;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -348,7 +349,7 @@ div#preloader {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #000;
   width: 30px;
   height: 2px;
 }
@@ -383,7 +384,7 @@ div#preloader {
 /*--------------------------------*/
 
 .header-area.stick {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #FFF;
   height: 70px;
   position: fixed;
   top: 0;
@@ -426,23 +427,23 @@ div#preloader {
 }
 
 .stick .main-menu ul.nav>li>a:hover {
-  color: #fff;
+  color: #80e27e;
 }
 
 .stick .main-menu ul.navbar-nav li.active a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #fff;
+  color: #323232;
   position: relative;
 }
 
 .stick .mainmenu ul#nav>li:hover>a, .stick .mainmenu ul#nav li .mega-menu, .stick .mainmenu ul#nav li ul.sub-menu {
-  background-color: #f5f5f5;
-  color: #fff;
+  background-color: #FFF;
+  color: #80e27e;
   outline: medium none;
 }
 
 .stick .mainmenu ul#nav li:hover ul.sub-menu li a:hover, .mainmenu ul#nav li .mega-menu span>a:hover, .stick .mainmenu ul#nav li .mega-menu-shop a.mega-menu-title:hover {
-  color: #fff;
+  color: #80e27e;
 }
 
 .stick .logo {
@@ -454,7 +455,7 @@ div#preloader {
 }
 
 .stick .main-menu ul.nav>li>a {
-  color: #fff;
+  color: #323232;
   line-height: 22px;
   padding: 24px 0px;
   text-transform: capitalize;
@@ -462,7 +463,7 @@ div#preloader {
 }
 
 .stick .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #80e27e;
   width: 30px;
   height: 2px;
 }
@@ -476,7 +477,7 @@ div#preloader {
 --------------------------------*/
 
 .about-area {
-  background-color: #f9f9f9;
+  background-color: #FFF;
 }
 
 .single-well>a {
@@ -490,7 +491,7 @@ div#preloader {
 }
 
 .single-well ul li i {
-  color: #3EC1D5;
+  color: #80e27e;
   padding-right: 10px;
   font-size: 12px;
 }
@@ -522,7 +523,7 @@ div#preloader {
 }
 
 .services-details:hover h4, .services-details:hover .services-icon {
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .row.second-row {
@@ -622,7 +623,7 @@ div#preloader {
 }
 
 .faq-details h4.check-title a.active, .faq-details a.active span.acc-icons::before {
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .faq-details a.active span.acc-icons::before {
@@ -688,7 +689,7 @@ div#preloader {
 
 .tab-menu ul li.active a, .tab-menu ul li.hover a, .tab-menu ul li.focus a {
   border-bottom: 1px solid #fff;
-  color: #3EC1D5 !important;
+  color: #80e27e !important;
 }
 
 .tab-menu .nav-tabs {
@@ -727,7 +728,7 @@ div#preloader {
 ----------------------------------------*/
 
 .wellcome-area {
-  background: rgba(248, 248, 248, 0.8) url("../img/background/bg1.jpg");
+  background: #80e27e url("../img/background/bg1.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -771,7 +772,7 @@ div#preloader {
 }
 
 .suscribe-input input {
-  background: transparent none repeat scroll 0 0;
+  
   border: medium none;
   color: #fff;
   float: left;
@@ -881,7 +882,7 @@ div#preloader {
 }
 
 .email-news .email_button>button:hover {
-  background: #3EC1D5;
+  background: #80e27e;
   border: 1px solid #fff;
   color: #fff;
 }
@@ -891,7 +892,7 @@ div#preloader {
 }
 
 .team-left-icon ul li a:hover {
-  color: #3EC1D5;
+  color: #80e27e;
   background: #fff;
   border: 2px solid #fff;
 }
@@ -968,8 +969,8 @@ div#preloader {
 
 .team-social-icon ul li a:hover {
   color: #fff;
-  border: 1px solid #3EC1D5;
-  background: #3EC1D5;
+  border: 1px solid #80e27e;
+  background: #80e27e;
 }
 
 .team-content {
@@ -1015,7 +1016,7 @@ div#preloader {
 }
 
 .work-left-text {
-  background: #3EC1D5 none repeat scroll 0 0;
+  background: #80e27e none repeat scroll 0 0;
 }
 
 .work-left-text {
@@ -1097,8 +1098,8 @@ div#preloader {
 }
 
 .project-menu li a.active, .project-menu li a:hover {
-  border-color: #3EC1D5;
-  background: #3EC1D5;
+  border-color: #80e27e;
+  background: #80e27e;
   color: #fff;
   text-decoration: none;
 }
@@ -1267,7 +1268,7 @@ div#preloader {
   position: absolute;
   right: 50px;
   top: 12px;
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .pri_table_list button {
@@ -1304,7 +1305,7 @@ div#preloader {
 }
 
 .saleon {
-  background: #3EC1D5 none repeat scroll 0 0;
+  background: #80e27e none repeat scroll 0 0;
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -1333,8 +1334,8 @@ div#preloader {
 }
 
 .active>button {
-  background: #3EC1D5 none repeat scroll 0 0;
-  border: 1px solid #3EC1D5;
+  background: #80e27e none repeat scroll 0 0;
+  border: 1px solid #80e27e;
   color: #fff;
   transition: 0.4s;
 }
@@ -1442,7 +1443,7 @@ div#preloader {
 }
 
 .testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
-  background: #3EC1D5;
+  background: #80e27e;
 }
 
 .testi-text.text-center>h6 {
@@ -1458,7 +1459,7 @@ div#preloader {
 }
 
 .guest-rev>a {
-  color: #3EC1D5;
+  color: #80e27e;
   font-size: 14px;
 }
 
@@ -1571,7 +1572,7 @@ div#preloader {
 }
 
 .single-blog .ready-btn:hover {
-  border: 1px solid #3EC1D5;
+  border: 1px solid #80e27e;
   color: #fff;
 }
 
@@ -1580,7 +1581,7 @@ div#preloader {
 --------------------------------*/
 
 .suscribe-area {
-  background: #3EC1D5 none repeat scroll 0 0;
+  background: #80e27e none repeat scroll 0 0;
   padding: 30px 0;
 }
 
@@ -1602,7 +1603,7 @@ div#preloader {
 .sus-btn {
   background: #fff none repeat scroll 0 0;
   border: 2px solid #fff;
-  color: #3EC1D5;
+  color: #80e27e;
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
@@ -1614,7 +1615,7 @@ div#preloader {
 }
 
 .sus-btn:hover {
-  background: #3EC1D5 none repeat scroll 0 0;
+  background: #80e27e none repeat scroll 0 0;
   border: 2px solid #fff;
   color: #fff;
 }
@@ -1674,13 +1675,13 @@ div#preloader {
 
 .contact-form button[type=submit]:hover {
   color: #fff;
-  border: 1px solid #3EC1D5;
-  background: #3EC1D5;
+  border: 1px solid #80e27e;
+  background: #80e27e;
 }
 
 .contact-form  #sendmessage {
-  color: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  color: #80e27e;
+  border: 1px solid #80e27e;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1801,7 +1802,7 @@ div#preloader {
 }
 
 .footer-contacts p span {
-  color: #3EC1D5;
+  color: #80e27e;
   font-weight: 700;
 }
 
@@ -1815,8 +1816,8 @@ div#preloader {
 }
 
 .popular-tag ul li a:hover, .footer-icons ul li a:hover {
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  background: #80e27e;
+  border: 1px solid #80e27e;
   color: #fff;
 }
 
@@ -1844,7 +1845,7 @@ div#preloader {
 
 .copyright-text a:hover {
   text-decoration: underline;
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .copyright-text a {
@@ -1857,7 +1858,7 @@ div#preloader {
 }
 
 .copyright a, .credits a {
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .credits {
@@ -2020,8 +2021,8 @@ div#preloader {
 
 .ready-btn:hover {
   color: #fff;
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  background: #80e27e;
+  border: 1px solid #80e27e;
   text-decoration: none;
 }
 
@@ -2039,7 +2040,7 @@ div#preloader {
 }
 
 .pst-content p a:hover, .left-blog ul li a:hover {
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .blog-page .single-blog {
@@ -2090,7 +2091,7 @@ div#preloader {
 
 /*----------------------------------------*/
 
-/*  19.	Blog Details css
+/*  19. Blog Details css
 /*----------------------------------------*/
 
 .post-information h2 {
@@ -2110,7 +2111,7 @@ div#preloader {
 }
 
 .entry-meta span a:hover {
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .post-information .entry-meta {
@@ -2132,7 +2133,7 @@ div#preloader {
 
 .entry-content blockquote {
   background: #fff none repeat scroll 0 0;
-  border-left: 5px solid #3EC1D5;
+  border-left: 5px solid #80e27e;
   font-size: 17.5px;
   font-style: italic;
   margin: 0 0 20px 40px;
@@ -2140,8 +2141,8 @@ div#preloader {
 }
 
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
-  background-color: #3EC1D5;
-  border-color: #3EC1D5;
+  background-color: #80e27e;
+  border-color: #80e27e;
   color: #fff;
   cursor: default;
   z-index: 3;
@@ -2181,8 +2182,8 @@ div#preloader {
 }
 
 .sharing-icon a:hover {
-  color: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  color: #80e27e;
+  border: 1px solid #80e27e;
 }
 
 .single-blog .author-avatar {
@@ -2333,13 +2334,13 @@ span.email-notes {
 }
 
 .comments-content-wrap span a:hover {
-  color: #3EC1D5;
+  color: #80e27e;
 }
 
 .comment-respond input[type=submit]:hover {
-  border: 1px solid #3EC1D5;
+  border: 1px solid #80e27e;
   color: #fff;
-  background: #3EC1D5;
+  background: #80e27e;
 }
 
 .single-blog .blog-pagination {
@@ -2351,9 +2352,3 @@ span.email-notes {
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
-div#cardperfile.card {
-  border-color: red;
-}
-div.container#contenedor {
-  border-color: red;
-}

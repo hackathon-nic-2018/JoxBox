@@ -1,62 +1,59 @@
 <footer>
-  <div class="footer-area">
+  <div class="footer-area" style="background-color:#323232;">
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="footer-content">
             <div class="footer-head">
               <div class="footer-logo">
-                <h2>JobBox</h2>
+                <img src="/images/jox.png" style="width:150px;"/>
               </div>
 
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+              <p style="color:#a2a2a2;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
               <div class="footer-icons">
                 <ul>
                   <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-facebook" style="color:#a2a2a2;"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-twitter" style="color:#a2a2a2;"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-google"></i></a>
+                    <a href="#"><i class="fa fa-instagram" style="color:#a2a2a2;"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-youtube" style="color:#a2a2a2;"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- end single footer -->
+        <!-- fin footer simple-->
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="footer-content">
             <div class="footer-head">
-              <h4>Información</h4>
-              <p>
+              <h4 style="color:#a2a2a2;">information</h4>
+              <p style="color:#a2a2a2;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
-              <div class="footer-contacts">
-                <p><span>Telefono:</span> +123 456 789</p>
-                <p><span>Email:</span> contact@example.com</p>
-                <p><span>Horario de atención:</span> 9am-5pm</p>
+              <div class="footer-contacts" >
+                <p style="color:#a2a2a2;"><span>Teléfono:</span> +505 8556 7839</p>
+                <p style="color:#a2a2a2;"><span>Correo electrónico:</span> info@jobbox.com.ni</p>
+                <p style="color:#a2a2a2;"><span>Horario de atención:</span> 9:00 am - 5:00 pm</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- end single footer -->
+        <!-- fin footer simple-->
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="footer-content">
             <div class="footer-head">
-              <h4>Instagram</h4>
-              <div class="flicker-img">
-                <a href="#"><img src="/img/portfolio/1.jpg" alt=""></a>
-                <a href="#"><img src="/img/portfolio/2.jpg" alt=""></a>
-                <a href="#"><img src="/img/portfolio/3.jpg" alt=""></a>
-                <a href="#"><img src="/img/portfolio/4.jpg" alt=""></a>
-                <a href="#"><img src="/img/portfolio/5.jpg" alt=""></a>
-                <a href="#"><img src="/img/portfolio/6.jpg" alt=""></a>
+              <h4 style="color:#a2a2a2;">Empresa</h4>
+              <div class="footer-contacts" >
+                <a style="color:#a2a2a2;" href="#">Acerca de nostros</a><br/><br/>
+                <a style="color:#a2a2a2;" href="#">Nuestras oficinas</a><br/><br/>
+                <a style="color:#a2a2a2;" href="#">Preguntas frecuentes</a>
               </div>
             </div>
           </div>
@@ -64,20 +61,20 @@
       </div>
     </div>
   </div>
-  <div class="footer-area-bottom">
+  <div class="footer-area-bottom" style="background-color:#323232;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="copyright text-center">
-            <p>
-              &copy; Copyright <strong>JobBox</strong>. Derechos Reservados
+            <p style="color:#a2a2a2;">
+              &copy; Copyright <strong>JobBox</strong>. Todos los derechos reservados
             </p>
           </div>
           <div class="credits">
-              Creado por: <a href="/">Team404</a>
-            </div>
+            <p style="color:#a2a2a2;">Diseñado por: <a href="https://team404.com/">Team 404</a></p>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
