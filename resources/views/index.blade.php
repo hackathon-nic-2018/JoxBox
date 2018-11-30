@@ -284,7 +284,46 @@
 </div>
 
 <!-- fin servicios -->
+
+<!-- Inicio de membrecia -->
+<div id="pricing" class="pricing-area area-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6  col-sm-4 col-xs-12">
+        <div class="pri_table_list">
+          <img src="/images/jobbox/Jobbox logo 300px.png" alt="" style="width: 200px;height: 50px;padding-top: 15px;">
+          
+          <ol>
+            <li>Jober verificado, perfil y portafolio</li>
+            <li>Opta a miles de ofertas</li>
+            <li>Hasta rank silver</li>
+          </ol>
+          <a class="btn btn-primary" id="btn-primary">Registrate ahora</a>
+        </div>
+      </div>
+      <div class="col-md-6  col-sm-4 col-xs-12">
+        <div class="pri_table_list">
+          <img src="/images/jobbox/Jobbox Pro 300px.png" alt="" style="width: 240px;height: 50px; padding-top: 15px;">
+          <ol>
+            <li>Todo desde el nivel gratuito</li>
+            <li>Mayor visibilidad en los motores de busqueda</li>
+            <li>Hasta rank gold</li>
+            <li>Herramientas para jobers</li>
+            <li>Prioridad de soporte tecnico</li>
+          </ol>
+          <a class="btn btn-primary" id="btn-primary">Aprende más</a>
+        </div>
+      </div>
+      </div>
+  </div>
 </div>
+<!-- Fin membresia -->
 
 <!-- Footer -->
 

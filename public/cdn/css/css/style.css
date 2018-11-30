@@ -40,6 +40,27 @@
 html, body {
   height: 100%;
 }
+#btn-primary:hover{
+background: #7cb342;
+color: #fff !important;
+border: none;
+
+}
+#btn-primary:active{
+background: #fff;
+
+}
+
+#btn-primary{
+background: #80E27E;
+border: none;
+margin-bottom: 18px;
+padding-top: 10px;
+width: 165px;
+height: 40px;
+
+}
+
 
 .floatleft {
   float: left;
