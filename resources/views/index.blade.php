@@ -97,7 +97,7 @@
 
 <!-- End Service area -->
 
-<!-- Start Wellcome Area -->
+<!-- Inicio buscador-->
 <div class="wellcome-area">
   <div class="well-bg" >
     <div class="test-overly" style="background-color:#80e27e; height:200px;" ></div>
@@ -120,7 +120,7 @@
     </div>
   </div>
 </div>
-<!-- End Wellcome Area -->
+<!-- Fin buscador-->
 
 <!-- perfil -->
 <div id="team" class="our-team-area area-padding">
@@ -217,11 +217,10 @@
 
                     <ul class="list-inline" style="padding-bottom: 20px;">
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="/listar/{{$f->id}}">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
                           <span class="btn btn-primary">Ver más</span>
                         </a>
                       </li>
-                      //
                     </ul>
                   </div>
                 </div>
@@ -239,9 +238,7 @@
 </div>
 </div>
 
-<!-- End column --><!-- End Team Area -->
-
-<hr>
+<!-- fin servicios -->
 </div>
 
 <!-- Footer -->

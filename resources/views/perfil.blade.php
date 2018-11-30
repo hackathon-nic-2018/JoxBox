@@ -145,4 +145,3 @@
 	</div>	
 @endsection()
 @section('script')
-@section('script')
