@@ -20,7 +20,7 @@ Supports Thumbs: true
 }
 
 .nivo-caption::after {
-  background: #444 none repeat scroll 0 0;
+  background: none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -29,6 +29,7 @@ Supports Thumbs: true
   top: 0;
   width: 100%;
   z-index: -1;
+  color: #80e27e;
 }
 
 .layer-1-2 {
@@ -115,7 +116,7 @@ Supports Thumbs: true
 
 .nivo-controlNav a:hover, .nivo-controlNav a.active {
   background: #fff none repeat scroll 0 0;
-  border-color: #3EC1D5;
+  border-color: #80e27e;
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -268,7 +269,7 @@ preview-1
 
 
 .preview-1 .nivo-caption {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .preview-1 .nivo-caption a {
@@ -370,9 +371,9 @@ preview-2
 }
 
 .preview-2 .nivo-directionNav a.nivo-nextNav:hover:before, .preview-2 .nivo-directionNav a.nivo-prevNav:hover:before {
-  border-color: #3EC1D5;
+  border-color: #80e27e;
   color: #fff;
-  background: #3EC1D5;
+  background: #80e27e;
 }
 
 .preview-2 .nivo-directionNav a.nivo-nextNav::before {

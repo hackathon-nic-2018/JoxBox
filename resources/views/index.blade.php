@@ -8,9 +8,9 @@
 <div id="home" class="slider-area">
   <div class="bend niceties preview-2">
     <div id="ensign-nivoslider" class="slides">
-      <img src="/cdn/img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
-      <img src="/cdn/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
-      <img src="/cdn/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+      <img src="/images/slider1.png" alt="" title="#slider-direction-1" />
+      <img src="/images/slider2.png" alt="" title="#slider-direction-2" />
+      <img src="/images/slider3.png" alt="" title="#slider-direction-3" />
     </div>
 
     <!-- direction 1 -->
@@ -19,18 +19,22 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="slider-content">
-              <!-- layer 1 -->
+              <!-- layer 1 
               <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                <h2 class="title1">Contrata expertos para cualquier trabajo en línea. </h2>
-              </div>
+                <h2 class="title1" style="color:#000;">Contrata expertos para cualquier trabajo en línea. </h2>
+              </div>-->
               <!-- layer 2 -->
               <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                <h1 class="title2">Tenemos representantes expertos en todos los campos técnicos, profesionales y creativos.</h1>
+
+                <h1 class="title2" style="color:#000; text-align:left;">MILES DE <span style="color:#80E27E;">JOBERS</span></h1>
+
+                <h1 style="color:#000; text-align:left; margin-top:-10px;">DISPUESTOS A SOLUCIONAR TUS PROBLEMAS</h1>
+
               </div>
               <!-- layer 3 -->
               <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                <a class="ready-btn right-btn page-scroll" href="#services">Ver Servicios</a>
-                <a class="ready-btn page-scroll" href="#about">Leer Más</a>
+                <a class="btn btn-primary" href="#services" style="border:none;">Ver Servicios</a>
+                <a class="btn btn-primary" href="#about" style="border:none;">Leer más</a>
               </div>
             </div>
           </div>
@@ -44,18 +48,18 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="slider-content text-center">
-              <!-- layer 1 -->
+              <!-- layer 1 
               <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                 <h2 class="title1">The Best Business Information </h2>
-              </div>
+              </div>-->
               <!-- layer 2 -->
               <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
+                <h1 class="title2" style="text-align:left;">ENCUENTRA TU <span style="color:#80E27E;">JOBER</span> IDEAL</h1>
               </div>
               <!-- layer 3 -->
               <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                <a class="btn btn-primary" href="#services" style="border:none;">Ver Servicios</a>
+                <a class="btn btn-primary" href="#about" style="border:none;">Leer más</a>
               </div>
             </div>
           </div>
@@ -69,18 +73,18 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="slider-content">
-              <!-- layer 1 -->
+              <!-- layer 1 
               <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                 <h2 class="title1">The Best business Information </h2>
-              </div>
+              </div>-->
               <!-- layer 2 -->
               <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                <h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1>
+                <h1 class="title2">EMPIEZA A BUSCAR</h1>
               </div>
               <!-- layer 3 -->
               <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                <a class="btn btn-primary" href="#services" style="border:none;">Ver Servicios</a>
+                <a class="btn btn-primary" href="#about" style="border:none;">Leer más</a>
               </div>
             </div>
           </div>
@@ -216,22 +220,18 @@
 
 <!-- Start Wellcome Area -->
 <div class="wellcome-area">
-  <div class="well-bg">
-    <div class="test-overly"></div>
+  <div class="well-bg" >
+    <div class="test-overly" style="background-color:#80e27e; height:200px;" ></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="wellcome-text">
-            <div class="well-text text-center">
-              <h2>Busca tu Jober</h2>
-              <p>
-                Busuness Lorem ipsum dolor sit amet, consectetur adipiscing elit.luctus est eget congue.
-              </p>
-              <div class="subs-feilds">
+          <div class="wellcome-text" >
+            <div class="well-text text-left">
+              <h2 style="color:#000; font-weight:bold;">DINOS LO QUE BUSCAS</h2>
+              <div>
                 <div class="suscribe-input">
-                  <input type="email" class="email form-control width-80" id="sus_email" placeholder="Buscar jober">
-                  <button type="submit" id="sus_submit" class="add-btn width-20">Buscar</button>
-                  <div id="msg_Submit" class="h3 text-center hidden"></div>
+                  <input style="color:#000; width:500px;" type="email" class="email form-control width-80" id="sus_email" placeholder="Buscar jober">
+                  <img src="cdn/img/7.png" style="width:250px; position:absolute; top:60px; right:50px;"/>
                 </div>
               </div>
             </div>
@@ -245,48 +245,48 @@
 
 <!-- perfil -->
 <div id="team" class="our-team-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Mejores jober</h2>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>Mejores jober</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="team-top">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-                  <img src="/img/team/1.jpg" alt="">
-                </a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-                       <i class="fa fa-facebook"></i>
-                     </a>
-                   </li>
-                   <li>
+    </div>
+    <div class="row">
+      <div class="team-top">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="single-team-member">
+            <div class="team-img">
+              <a href="#">
+                <img src="/img/usuario/1.jpg" alt="">
+              </a>
+              <div class="team-social-icon text-center">
+                <ul>
+                  <li>
                     <a href="#">
-                     <i class="fa fa-twitter"></i>
+                     <i class="fa fa-facebook"></i>
                    </a>
                  </li>
                  <li>
                   <a href="#">
-                   <i class="fa fa-instagram"></i>
+                   <i class="fa fa-twitter"></i>
                  </a>
                </li>
-             </ul>
-           </div>
+               <li>
+                <a href="#">
+                 <i class="fa fa-instagram"></i>
+               </a>
+             </li>
+           </ul>
          </div>
-         <div class="team-content text-center">
-          <h4>Jhon Mickel</h4>
-          <p>Seo</p>
-        </div>
+       </div>
+       <div class="team-content text-center">
+        <h4>Jhon Mickel</h4>
+        <p>Seo</p>
       </div>
     </div>
+  </div>
   <!-- End column -->
   <div class="col-md-3 col-sm-3 col-xs-12">
     <div class="single-team-member">
@@ -400,5 +400,3 @@
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 @endsection
-
-
