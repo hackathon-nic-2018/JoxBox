@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\employee;
 use App\offer;
+use App\category;
 
 
 class FrontController extends Controller
@@ -22,6 +23,10 @@ class FrontController extends Controller
         ->orderBy('employees.nombre', 'desc')
         ->paginate(6);;
 
-		return view ('index', ["jober"=>$jober, 'oferta'=> $oferta]);
+       $categorias=category::select('categories.*')
+       ->orderBy('categories.nombre', 'desc')
+       ->paginate(6);
+
+		return view ('index', ["jober"=>$jober, 'oferta'=> $oferta, 'categorias'=>$categorias]);
 	}
 }
