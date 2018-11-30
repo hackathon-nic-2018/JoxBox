@@ -31,7 +31,7 @@ Route::resource('empleado', 'EmpleadoController');
 Route::resource('solicitud', 'SolicitudController');
 Route::get('/perfil/empleado/{id}', 'EmpleadoController@perfil'); 
 Route::resource('curso', 'CursosCOntroller');
-
+Route::get('/buscar/{nombre}/{ciudad}', 'ServiciosController@buscar');
 
 
 

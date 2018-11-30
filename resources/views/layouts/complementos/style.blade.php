@@ -5,7 +5,8 @@
 <link href="/cdn//img/jobbox.png" rel="apple-touch-icon">
 
 
-<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"><!-- Google Fonts -->
+
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
 
 <!-- Bootstrap CSS File -->

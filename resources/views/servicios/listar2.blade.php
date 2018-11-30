@@ -10,18 +10,13 @@
 
 		<nav class="navbar navbar-light bg-light" style="text-align: center;">
 			<form class="form-inline">
-				
+				<input class="form-control mr-sm-2" type="search" placeholder="Buscar"></input>
 
 
-				<select name="type" id="type" class="form-control" onchange="redireccion2();" id="depto" class="form-control">
+				<select name="type" id="type" class="form-control">
 					<option value="">Seleccionar opción</option>
-					<option value="Esteli">Esteli</option>
-					<option value="Managua">Managua</option>
-				</select>
-				<select name="type" id="type" class="form-control" onchange="redireccion();" id="categoria" class="form-control">
-					@foreach ($categoria as $c)
-					<option value="{{$c->nombre}}">{{$c->nombre}}</option>
-					@endforeach
+					<option value="empleado">Esteli</option>
+					<option value="empleador">Managua</option>
 				</select>
 				<button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
 			</form>
@@ -58,22 +53,5 @@
 	</div>	
 </div>
 
-
-<script type="text/javascript">
-	
-	
-	var nombre= $('#nombre').val();
-		//var depto=$('#depto option:selected').val();
-		var depto=$('#captura2 option:selected').val();
-
-
-		var auxiliar= nombre+ '/'+;depto;
-		console.log(auxiliar);
-	//var auxiliar3= auxiliar + '/'+cap;
-	var ruta='/buscar/'+ auxiliar;
-	window.location.href=ruta;
-
-
-</script>
-
+@section('script')
 @endsection

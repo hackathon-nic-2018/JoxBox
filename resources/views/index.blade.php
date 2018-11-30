@@ -200,8 +200,9 @@
               <div class="card">
                 <div class="card-body text-center">
                   <p><img class=" img-fluid" src="/images/{{$f->imagen}}" alt="card image"></p>
-                  <h4 class="card-title">{{$f->categoria}}</h4>
-                  <p class="card-text">{{$f->empleado}}</p>
+                  <h5 class="card-title"><h4>{{$f->nombre}}</h4></h5>
+                 
+                  <p class="card-text">{{$f->descripcion}}</p>
                   <a href="#" class="btn btn-primary btn-sm">
                     <i class="far fa-star"></i></a>
                   </div>
@@ -211,13 +212,13 @@
                 <div class="card">
                   <div class="card-body text-center mt-4">
                     <p><img class=" img-fluid" src="/images/{{$f->imagen}}" alt="card image"></p>
-                    <h4 class="card-title"><b>{{$f->nombre}}</b></h4>
-                    <h4 class="card-title"><b>{{$f->empleado}}</b></h4>
+                     <h5 class="card-title">{{$f->nombre}}</h5>
+                    <h5 class="card-title"><b>{{$f->empleado}}</b></h5>
                     <p class="card-text">{{$f->profesion}}</p>
 
                     <ul class="list-inline" style="padding-bottom: 20px;">
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <a class="social-icon text-xs-center" target="_blank" href="/servicios/{{$f->id}}">
                           <span class="btn btn-primary">Ver más</span>
                         </a>
                       </li>

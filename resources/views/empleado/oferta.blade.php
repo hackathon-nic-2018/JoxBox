@@ -6,7 +6,7 @@
 					<span aria-hidden="true">x</span>
 					
 				</button>
-				<h4 class="modal-title">Ofrecer Servicio</h4>
+				<h4 class="modal-title">Ofrecer servicio</h4>
 			</div>
 			<div class="modal-body">
 				{{Form::token()}}

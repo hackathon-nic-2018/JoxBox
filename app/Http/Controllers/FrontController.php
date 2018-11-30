@@ -17,7 +17,7 @@ class FrontController extends Controller
         ->orderBy('employees.id', 'desc')
         ->paginate(4);;
 
-        $oferta=offer::select('offers.*', 'employees.*','categories.*')
+        $oferta=offer::select('offers.id','offers.nombre','offers.descripcion','offers.puesto','offers.imagen', 'employees.nombre','employees.apellido','employees.cedula','categories.nombre')
         ->join('employees', 'employees.id', '=', 'offers.id_empleado')
         ->join('categories', 'categories.id', '=', 'offers.id_categoria')
         ->orderBy('employees.nombre', 'desc')

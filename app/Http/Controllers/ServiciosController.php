@@ -23,13 +23,40 @@ class ServiciosController extends Controller
         $oferta = DB::table('offers')
         ->join('categories', 'categories.id', '=', 'offers.id_categoria')
         ->join('employees', 'employees.id', '=', 'offers.id_empleado')
-        ->select('offers.id','offers.nombre as servicio','offers.imagen','offers.descripcion','categories.nombre as categoria','employees.nombre as empleado')
+        ->select('offers.id','offers.nombre as servicio','employees.ciudad','offers.imagen','offers.descripcion','categories.nombre as categoria','employees.nombre as empleado')
         ->orderBy('offers.nombre', 'desc')
-        ->paginate(10);
+        ->get();
+
+         $categoria=DB::table('categories as c')
+        ->select('c.nombre')
+        ->get();
+
+        //$categoria = Category::Orderby('nombre','desc')->paginate(10);;
         //dd($oferta);
-        return view('servicios.listar')->with('oferta',$oferta);
+        return view('servicios.listar',["oferta"=>$oferta, "categoria"=>$categoria]);
         
 
+    }
+
+    public function buscar(Request $request,$nombre, $ciudad)
+    {
+        //
+        if ($request) 
+        {
+
+            $query=trim($request->get('categoria'));
+
+            $oferta = DB::table('offers')
+            ->join('categories', 'categories.id', '=', 'offers.id_categoria')
+            ->join('employees', 'employees.id', '=', 'offers.id_empleado')
+            ->select('offers.id','offers.nombre as servicio','employees.ciudad','offers.imagen','offers.descripcion','categories.nombre as categoria','employees.nombre as empleado')
+            ->orderBy('offers.nombre', 'desc')
+            ->where('offers.nombre', '=', $nombre)
+            ->where('employees.ciudad', '=', $ciudad)
+            ->paginate(10);
+
+            return view('servicios.listar', ["oferta"=>$oferta, "searchText"=>$query]);
+        }
     }
 
 

@@ -73,7 +73,7 @@ class SolicitudController extends Controller
        ->paginate(6);;
 
 
-       return view ('empleado.perfil', ["empleado"=>$empleado, 'oferta'=>$oferta]);
+       return view ('empleado.', ["empleado"=>$empleado, 'oferta'=>$oferta]);
    }
 
     /**

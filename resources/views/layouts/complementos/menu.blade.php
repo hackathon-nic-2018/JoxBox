@@ -23,12 +23,34 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
             <ul class="nav navbar-nav navbar-right">
+              @if (Auth::guest())
               <li class="active">
                 <a class="page-scroll" href="/login">Iniciar sesión</a>
               </li>
+
               <li>
                 <a class="page-scroll" href="/register">Regístrate</a>
               </li>
+              <li>
+
+                <a class="page-scroll" href="/servicios">Servicios</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="/contacto">Contacto</a>
+              </li>
+              @else
+              <li>
+
+                <a class="page-scroll" href="/servicios">Servicios</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="/contacto">Contacto</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="/home">Administracion</a>
+              </li>
+
+              @endif
 
             </ul>
           </div>
