@@ -3,6 +3,7 @@
 @section('content')
 	<div class="col-md-8 col-md-offset-2">
 		@if( Auth::user()->type == 'empleador')	
+		<!-- form create empleador-->
 			{!! Form::open(['route' =>'empleador.store','method'=>'POST','files'=>true]) !!}
 			
 			<div class="form-group col-md-6">
@@ -45,7 +46,7 @@
 			<div class="form-group col-md-6">
 				{!!form::submit('Guardar',['name'=>'guardar','id'=>'guardar','class'=>'btn btn-primary btn-sm-mt-10'])!!}
 
-		{!!Form::close()!!}
+			{!!Form::close()!!}
 
 	</div>
 		@else
